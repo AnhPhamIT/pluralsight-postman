@@ -49,7 +49,7 @@
 					}
 				}
 			],
-			"_postman_id": "3eb90786-7f73-4202-91d1-e04cf7f0bcac",
+			"id": "3eb90786-7f73-4202-91d1-e04cf7f0bcac",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -80,7 +80,7 @@
 					}
 				}
 			],
-			"_postman_id": "381bbdd1-1a04-4151-972c-8a9ae0348bb2",
+			"id": "381bbdd1-1a04-4151-972c-8a9ae0348bb2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -152,7 +152,7 @@
 					}
 				}
 			],
-			"_postman_id": "c904bb22-d262-43a5-bbda-1ef3794f10fc",
+			"id": "c904bb22-d262-43a5-bbda-1ef3794f10fc",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -172,10 +172,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"{{email}}\",\r\n    \"firstname\":\"{{firstName}}\",\r\n    \"lastname\":\"{{lastName}}\",\r\n    \"householdId\":{{householdID}}\r\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\r\n    \"email\":\"{{email}}\",\r\n    \"firstname\":\"{{firstName}}\",\r\n    \"lastname\":\"{{lastName}}\",\r\n    \"householdId\":{{householdID}}\r\n}"
 				},
 				"url": "{{host}}/users"
 			},
@@ -215,7 +212,7 @@
 					}
 				}
 			],
-			"_postman_id": "0a5937bc-266b-4d6e-a3b9-5486aa0142cf",
+			"id": "0a5937bc-266b-4d6e-a3b9-5486aa0142cf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -234,6 +231,19 @@
 					}
 				],
 				"url": "{{host}}/wishlists/{{wishlistId}}/books/{{bookId}}"
+			},
+			"response": []
+		},
+		{
+			"name": "API Status",
+			"id": "7f5591e2-ed62-4824-9f9c-e5d96e08d09d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://simple-books-api.glitch.me/status"
 			},
 			"response": []
 		}
